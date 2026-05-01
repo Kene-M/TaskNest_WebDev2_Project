@@ -6,10 +6,11 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const Post = require("./models/post")
 const multer = require("multer");
+require('dotenv').config();
 
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb+srv://kene:kene1234@cluster0.8jldg2x.mongodb.net/?appName=Cluster0")
+mongoose.connect(process.env.MONGO_URI)
     .then(() => {
         console.log("Connected to MongoDB")
     })
