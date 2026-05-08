@@ -20,6 +20,7 @@ export class TaskList implements OnInit, OnDestroy {
   filters: { value: Filter; label: string }[] = [
     { value: 'all', label: 'All' },
     { value: 'todo', label: 'To Do' },
+    { value: 'in-progress', label: 'In Progress' },
     { value: 'done', label: 'Done' },
   ];
 
@@ -55,6 +56,7 @@ export class TaskList implements OnInit, OnDestroy {
   statusLabel(status: TaskStatus): string {
     const map: Record<TaskStatus, string> = {
       todo: 'To Do',
+      'in-progress': 'In Progress',
       done: 'Done',
     };
     return map[status];
