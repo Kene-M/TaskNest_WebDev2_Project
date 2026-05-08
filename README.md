@@ -66,7 +66,7 @@ You must have the following installed:
 
 ---
 
-## Installation and Setup
+## Local Installation and Setup
 
 ### Step 1: Install Dependencies
 
@@ -87,7 +87,7 @@ PORT=3000
 ### Step 3: Run the Backend
 
 ```
-npm run backend
+npm start
 ```
 
 This starts the GraphQL API server at `http://localhost:3000/graphql`.
@@ -96,7 +96,7 @@ This starts the GraphQL API server at `http://localhost:3000/graphql`.
 
 In a separate terminal window:
 ```
-npm run dev
+ng serve
 ```
 
 This starts the Angular development server at `http://localhost:4200`.
