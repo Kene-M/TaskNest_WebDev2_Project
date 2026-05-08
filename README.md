@@ -32,7 +32,7 @@ TaskNest is a full-stack task management web application built with the MEAN sta
 
 **Database**
 - MongoDB Atlas
-- Two Mongoose models: `Task` and `ErrorLog`
+- Two Mongoose models: `Task` and `Categories`
 
 ---
 
