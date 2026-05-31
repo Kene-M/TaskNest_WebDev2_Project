@@ -32,7 +32,7 @@ TaskNest is a full-stack task management web application built with the MEAN sta
 
 **Database**
 - MongoDB Atlas
-- Two Mongoose models: `Task` and `Categories`
+- Two Mongoose models: `Task` and `ErrorLog`
 
 ---
 
@@ -66,7 +66,7 @@ You must have the following installed:
 
 ---
 
-## Local Installation and Setup
+## Installation and Setup
 
 ### Step 1: Install Dependencies
 
@@ -87,7 +87,7 @@ PORT=3000
 ### Step 3: Run the Backend
 
 ```
-npm start
+npm run backend
 ```
 
 This starts the GraphQL API server at `http://localhost:3000/graphql`.
@@ -96,7 +96,7 @@ This starts the GraphQL API server at `http://localhost:3000/graphql`.
 
 In a separate terminal window:
 ```
-ng serve
+npm run dev
 ```
 
 This starts the Angular development server at `http://localhost:4200`.
